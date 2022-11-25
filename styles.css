@@ -29,6 +29,12 @@
         width: 50%;
         height: 40px;
     }
+
+    .fortune-text {
+        margin: 15px;
+        padding: 15px;
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width: 415px) {
@@ -59,6 +65,11 @@
     .logo {
         width: 25%;
         height: 60px;
+    }
+
+    .fortune-text {
+        padding: 25px 50px;
+        font-size: 36px;
     }
 }
 
@@ -113,4 +124,39 @@ body {
     background-color: #8dd0d8;
     border-radius: 50px 50px 0 0;
     box-shadow: 0 -3px 0 0 #4d3032;
+}
+
+.fortune-text {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+    background-color: #8dd0d8;
+    border-radius: 15px;
+    border: 3px solid #4d3032;
+    box-shadow: 0 3px 0 0 #4d3032;
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
 }
